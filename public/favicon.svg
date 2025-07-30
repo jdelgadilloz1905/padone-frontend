@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <circle cx="50" cy="50" r="45" fill="#e5308a" />
+  <g fill="#ffffff">
+    <path d="M25 60h50v10a5 5 0 0 1-5 5h-40a5 5 0 0 1-5-5v-10z" />
+    <path d="M30 45 L25 60 L75 60 L70 45 Z" />
+    <circle cx="35" cy="65" r="5" />
+    <circle cx="65" cy="65" r="5" />
+    <rect x="40" y="30" width="20" height="15" rx="3" />
+  </g>
+  <text x="50" y="55" font-family="Arial" font-size="10" font-weight="bold" text-anchor="middle" fill="#e5308a">TAXI</text>
+</svg> 

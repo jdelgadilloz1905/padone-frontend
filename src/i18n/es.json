@@ -1,0 +1,975 @@
+{
+  "common": {
+    "welcome": "Bienvenido",
+    "loading": "Cargando...",
+    "close": "Cerrar",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "edit": "Editar",
+    "delete": "Eliminar",
+    "search": "Buscar",
+    "filter": "Filtrar",
+    "view": "Ver",
+    "actions": "Acciones",
+    "rowsPerPage": "Filas por página:",
+    "paginationDisplayedRows": "{{from}}-{{to}} de {{count}}",
+    "showing": "Mostrando",
+    "of": "de",
+    "send": "Enviar",
+    "sending": "Enviando...",
+    "refresh": "Actualizar",
+    "call": "Llamar",
+    "message": "Mensaje",
+    "assign": "Asignar",
+    "updating": "Actualizando...",
+    "creating": "Creando...",
+    "deleting": "Eliminando...",
+    "saving": "Guardando...",
+    "update": "Actualizar",
+    "days": {
+      "sunday": "Domingo",
+      "monday": "Lunes",
+      "tuesday": "Martes",
+      "wednesday": "Miércoles",
+      "thursday": "Jueves",
+      "friday": "Viernes",
+      "saturday": "Sábado",
+      "sunShort": "Dom",
+      "monShort": "Lun",
+      "tueShort": "Mar",
+      "wedShort": "Mié",
+      "thuShort": "Jue",
+      "friShort": "Vie",
+      "satShort": "Sáb"
+    }
+  },
+  "zones": {
+    "title": "Zonas",
+    "add": "Añadir zona",
+    "edit": "Editar zona",
+    "duplicate": "Duplicar zona",
+    "duplicating": "Duplicando...",
+    "duplicateSuccess": "Zona duplicada exitosamente",
+    "duplicateError": "Error al duplicar la zona",
+    "name": "Nombre",
+    "description": "Descripción",
+    "baseRateKm": "Tarifa base por Millas",
+    "minimumFare": "Tarifa mínima",
+    "ratePerMinute": "Tarifa por minuto",
+    "pricePerMinute": "Precio por minuto",
+    "nightRatePercentage": "Porcentaje nocturno",
+    "weekendRatePercentage": "Porcentaje fin de semana",
+    "priceIntervals": "Intervalos de precios",
+    "priceIntervalsDesc": "Configura diferentes tarifas según la distancia del viaje",
+    "fromKm": "Desde Millas",
+    "toKm": "Hasta Millas",
+    "pricePerKm": "Precio por Millas",
+    "status": "Estado",
+    "active": "Activa",
+    "inactive": "Inactiva",
+    "actions": "Acciones",
+    "search": "Buscar zonas",
+    "areaTitle": "Área de la zona",
+    "drawArea": "Dibuje un polígono para definir el área o seleccione una región existente",
+    "useRegion": "Usar región",
+    "clickRegionHint": "Haga clic en una región para seleccionarla",
+    "zoneActivationToggle": "Zona activa",
+    "noZones": "No hay zonas disponibles",
+    "errorLoadingZones": "Error al cargar zonas",
+    "errorSavingZone": "Error al guardar la zona",
+    "errorDeactivatingZone": "Error al desactivar la zona",
+    "errorLoadingRegions": "Error al cargar las regiones",
+    "drawValidArea": "Dibuje un área válida antes de guardar",
+    "zoneCreatedSuccess": "Zona creada exitosamente",
+    "zoneUpdatedSuccess": "Zona actualizada exitosamente",
+    "zoneDeletedSuccess": "Zona eliminada exitosamente",
+    "zoneActivatedSuccess": "Zona activada exitosamente",
+    "zoneDeactivatedSuccess": "Zona desactivada exitosamente",
+    "cancelButton": "Cancelar",
+    "saveButton": "Guardar",
+    "countrySelect": "Seleccionar país",
+    "searchPlace": "Buscar ciudad o región",
+    "showCities": "Mostrar ciudades",
+    "useCustomRegion": "Usar región personalizada",
+    "help": {
+      "title": "Guía de Uso: Sistema de Zonas",
+      "whatAreZones": {
+        "title": "¿Qué son las Zonas?",
+        "description": "Las zonas son áreas geográficas donde opera el servicio de taxi. Cada zona tiene sus propias tarifas y reglas de operación."
+      },
+      "howItWorks": {
+        "title": "¿Cómo Funciona?",
+        "viewZones": {
+          "title": "Ver Zonas Existentes",
+          "description": "En la pantalla principal verás una lista de todas las zonas activas. Cada zona muestra su nombre, tarifa mínima, estado y número de intervalos de precios."
+        },
+        "createZone": {
+          "title": "Crear una Nueva Zona",
+          "steps": [
+            "Ingresa el nombre y descripción de la zona",
+            "Establece la tarifa mínima y porcentajes adicionales",
+            "Configura los intervalos de precios por kilómetro",
+            "Selecciona el país y define el área en el mapa"
+          ]
+        },
+        "editZone": {
+          "title": "Editar una Zona",
+          "description": "Puedes modificar la información básica, tarifas, área de cobertura y estado de la zona."
+        }
+      },
+      "tips": {
+        "title": "Consejos de Uso",
+        "naming": {
+          "title": "Nombres Claros",
+          "description": "Usa nombres que los conductores reconozcan fácilmente (ej: 'Centro Comercial', 'Zona Residencial')"
+        },
+        "pricing": {
+          "title": "Tarifas Justas",
+          "description": "Considera la distancia, tiempo de viaje y ajusta los porcentajes según horarios y días."
+        },
+        "areas": {
+          "title": "Áreas Bien Definidas",
+          "description": "Dibuja áreas que cubran completamente la zona de servicio, evita superposiciones y considera límites naturales."
+        }
+      },
+      "troubleshooting": {
+        "title": "Solución de Problemas",
+        "mapNotLoading": "Verifica tu conexión a internet y la API key de Google Maps",
+        "drawingIssues": "Asegúrate de que el mapa esté cargado y el modo de dibujo esté activo",
+        "savingErrors": "Verifica que todos los campos requeridos estén completos y el área sea válida"
+      }
+    },
+    "commissionPercentage": "% Comisión (ganancia)",
+    "unitMiles": "Millas",
+    "showing": "Mostrando",
+    "of": "de",
+    "errors": {
+      "pricePerMinuteInvalid": "El precio por minuto debe ser un número válido",
+      "pricePerMinuteNegative": "El precio por minuto no puede ser negativo",
+      "minimumFareInvalid": "La tarifa mínima debe ser un número válido",
+      "minimumFareNegative": "La tarifa mínima no puede ser negativa",
+      "nightRatePercentageInvalid": "El porcentaje nocturno debe ser un número válido",
+      "nightRatePercentageNegative": "El porcentaje nocturno no puede ser negativo",
+      "weekendRatePercentageInvalid": "El porcentaje de fin de semana debe ser un número válido",
+      "weekendRatePercentageNegative": "El porcentaje de fin de semana no puede ser negativo",
+      "commission_percentageInvalid": "El porcentaje de comisión debe ser un número válido",
+      "commission_percentageNegative": "El porcentaje de comisión no puede ser negativo",
+      "percentageExceeds": "Los porcentajes no pueden exceder el 100%"
+    }
+  },
+  "auth": {
+    "login": "Iniciar sesión",
+    "logout": "Cerrar sesión",
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "rememberMe": "Recordarme",
+    "forgotPassword": "¿Olvidaste tu contraseña?",
+    "invalidCredentials": "Credenciales inválidas",
+    "loginError": "Error al iniciar sesión. Intente nuevamente.",
+    "requiredFields": "Por favor complete todos los campos",
+    "recoverPasswordInfo": "Contacte a soporte para recuperar su contraseña",
+    "panelTitle": "Panel administrativo",
+    "phoneNumber": "Número de teléfono",
+    "otp": "Código de verificación",
+    "requestOtp": "Solicitar código",
+    "verify": "Verificar",
+    "changePhone": "Cambiar número",
+    "otpSent": "Hemos enviado un código de verificación a su teléfono móvil",
+    "requiredPhone": "Por favor ingrese su número de teléfono",
+    "requiredOtp": "Por favor ingrese el código de verificación",
+    "invalidOtp": "Código de verificación inválido",
+    "otpRequestError": "Error al solicitar el código. Intente nuevamente.",
+    "otpVerificationError": "Error al verificar el código. Intente nuevamente.",
+    "forgotPasswordTitle": "Recuperar contraseña",
+    "forgotPasswordDescription": "Ingresa tu dirección de email y te enviaremos un enlace para restablecer tu contraseña",
+    "emailLabel": "Dirección de email",
+    "emailPlaceholder": "ejemplo@email.com",
+    "sendResetLink": "Enviar enlace de recuperación",
+    "backToLogin": "Volver al inicio de sesión",
+    "resetSuccess": "¡Solicitud enviada exitosamente!",
+    "resetSuccessMessage": "Si el email existe en nuestro sistema, recibirás un mensaje con instrucciones para recuperar tu contraseña.",
+    "resetPasswordTitle": "Nueva contraseña",
+    "resetPasswordDescription": "Ingresa tu nueva contraseña. Debe cumplir con los criterios de seguridad mostrados abajo.",
+    "newPassword": "Nueva contraseña",
+    "confirmPassword": "Confirmar contraseña",
+    "passwordStrengthTitle": "Criterios de seguridad:",
+    "updatePassword": "Actualizar contraseña",
+    "passwordResetSuccess": "¡Contraseña restablecida exitosamente!",
+    "passwordResetSuccessMessage": "Tu contraseña ha sido actualizada. Ya puedes iniciar sesión con tu nueva contraseña.",
+    "goToLogin": "Ir al inicio de sesión",
+    "tokenExpired": "Enlace de recuperación expirado",
+    "tokenExpiredMessage": "El enlace de recuperación ha expirado o no es válido. Por favor, solicita uno nuevo.",
+    "requestNewLink": "Solicitar nuevo enlace",
+    "invalidToken": "Token de recuperación no válido",
+    "passwordsMatch": "Las contraseñas coinciden",
+    "passwordsDontMatch": "Las contraseñas no coinciden",
+    "passwordSecure": "¡Contraseña segura!",
+    "passwordErrors": {
+      "minLength": "Debe tener al menos 8 caracteres",
+      "uppercase": "Debe contener al menos una letra mayúscula",
+      "lowercase": "Debe contener al menos una letra minúscula",
+      "number": "Debe contener al menos un número",
+      "special": "Debe contener al menos un carácter especial"
+    },
+    "validationErrors": {
+      "emailRequired": "Por favor ingresa tu dirección de email",
+      "emailInvalid": "Por favor ingresa un email válido",
+      "fieldsRequired": "Por favor completa todos los campos",
+      "passwordsDontMatch": "Las contraseñas no coinciden",
+      "passwordInsecure": "La contraseña no cumple con los criterios de seguridad",
+      "tokenInvalid": "Token de recuperación inválido"
+    }
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "totalRides": "Total de carreras",
+    "activeRequests": "Solicitudes activas",
+    "onlineDrivers": "Conductores online",
+    "totalDrivers": "Conductores totales",
+    "recentRequests": "Solicitudes recientes",
+    "realtimeMap": "Mapa a tiempo real",
+    "requestDetails": "Detalles de solicitud",
+    "route": "Ruta",
+    "origin": "Origen",
+    "destination": "Destino",
+    "routeMap": "Mapa de ruta",
+    "requestTimeline": "Cronología de solicitud",
+    "noDriverAssigned": "Sin conductor asignado",
+    "assignDriver": "Asignar conductor",
+    "reassignDriver": "Reasignar conductor",
+    "addComment": "Agregar comentario",
+    "metrics": {
+      "totalRides": "Total de carreras",
+      "activeRequests": "Solicitudes activas",
+      "onlineDrivers": "Conductores online",
+      "totalDrivers": "Conductores totales"
+    },
+    "charts": {
+      "ridesOverTime": "Carreras en el tiempo",
+      "driverPerformance": "Rendimiento de conductores"
+    },
+    "recentActivity": {
+      "title": "Actividad reciente",
+      "noActivity": "Sin actividad reciente"
+    }
+  },
+  "clients": {
+    "title": "Pasajeros",
+    "searchPlaceholder": "Buscar pasajeros...",
+    "status": "Estado",
+    "all": "Todos",
+    "active": "Activo",
+    "inactive": "Inactivo",
+    "refresh": "Refrescar",
+    "export": "Exportar",
+    "exportError": "Error al exportar pasajeros",
+    "noClients": "No hay pasajeros registrados",
+    "noRegistered": "No hay pasajeros registrados en el sistema.",
+    "adjustFilters": "Ajusta los filtros para ver resultados.",
+    "fullName": "Nombre completo",
+    "phone": "Teléfono",
+    "email": "Email",
+    "registrationDate": "Fecha de registro",
+    "loadError": "Error al cargar los pasajeros.",
+    "registered": "Registrado",
+    "actions": "Acciones",
+    "vip": "VIP",
+    "rate": "Tarifa",
+    "editPassenger": "Editar pasajero",
+    "deletePassenger": "Eliminar pasajero",
+    "viewHistory": "Ver historial de carreras",
+    "activatePassenger": "Activar pasajero",
+    "deactivatePassenger": "Inactivar pasajero",
+    "deleteConfirmTitle": "¿Eliminar pasajero?",
+    "deleteConfirmMessage": "¿Estás seguro de eliminar al pasajero {{name}}?",
+    "deleteSuccess": "Pasajero eliminado exitosamente",
+    "deleteError": "Error al eliminar pasajero",
+    "statusUpdateSuccess": "Estado del pasajero actualizado exitosamente",
+    "statusUpdateError": "Error al cambiar el estado del pasajero",
+    "history": {
+      "title": "Historial de carreras de {name}",
+      "totalRides": "Total de carreras: {count}",
+      "totalSpent": "Total gastado: {amount}",
+      "loading": "Cargando historial...",
+      "noRides": "No hay carreras registradas para este pasajero",
+      "origin": "Origen",
+      "destination": "Destino",
+      "date": "Fecha",
+      "status": "Estado",
+      "price": "Precio",
+      "paymentMethod": "Método de pago",
+      "distance": "Distancia",
+      "duration": "Duración",
+      "driver": "Conductor",
+      "route": "Ruta",
+      "viewRoute": "Ver ruta en mapa",
+      "routeTitle": "Ruta: {origin} → {destination}",
+      "close": "Cerrar",
+      "statuses": {
+        "completed": "Completado",
+        "cancelled": "Cancelado",
+        "in_progress": "En progreso",
+        "pending": "Pendiente"
+      },
+      "paymentMethods": {
+        "cash": "Efectivo",
+        "card": "Tarjeta",
+        "credit": "Crédito",
+        "debit": "Débito"
+      }
+    },
+    "form": {
+      "newClient": "Nuevo Pasajero",
+      "editClient": "Editar Pasajero",
+      "personalInfo": "Información Personal",
+      "contactInfo": "Información de Contacto",
+      "firstName": "Nombre",
+      "lastName": "Apellido",
+      "phone": "Teléfono",
+      "email": "Email",
+      "saving": "Guardando...",
+      "createClient": "Crear Pasajero",
+      "save": "Guardar",
+      "cancel": "Cancelar",
+      "vip": {
+        "title": "Pasajero VIP",
+        "description": "Activar tarifas especiales para este pasajero",
+        "flatRate": "Tarifa plana",
+        "minuteRate": "Precio por minuto",
+        "flatRateDescription": "Monto fijo por carrera",
+        "minuteRateDescription": "Precio por minuto de viaje",
+        "amount": "Monto",
+        "pricePerMinute": "Precio por minuto"
+      },
+      "validation": {
+        "firstNameRequired": "El nombre es requerido",
+        "phoneRequired": "El teléfono es requerido",
+        "phoneInvalid": "Teléfono inválido",
+        "emailInvalid": "Email inválido"
+      },
+      "notes": "Notas"
+    }
+  },
+  "commissions": {
+    "title": "Comisiones",
+    "exportCsv": "Exportar CSV",
+    "exporting": "Exportando...",
+    "exportedSuccessfully": "Comisiones exportadas exitosamente",
+    "exportError": "Error al exportar comisiones",
+    "print": "Imprimir",
+    "filter": "Filtrar",
+    "startDate": "Fecha inicio",
+    "endDate": "Fecha fin",
+    "driverName": "Nombre del conductor",
+    "totalCommissions": "Total comisiones",
+    "ridesCompleted": "Carreras realizadas",
+    "averageCommission": "Comisión promedio",
+    "totalDrivers": "Conductores totales",
+    "noData": "No hay datos disponibles",
+    "driver": "Conductor",
+    "phone": "Teléfono",
+    "totalRides": "Total carreras",
+    "averageCommissionPercentage": "% comisión promedio",
+    "totalBilled": "Total facturado",
+    "actions": "Acciones",
+    "totalCommissionsCol": "Total comisiones",
+    "period": "Período",
+    "rides": "Carreras",
+    "amount": "Monto",
+    "status": "Estado"
+  },
+  "driverDetail": {
+    "title": "Detalle del Conductor",
+    "back": "Volver",
+    "editComplete": "Editar",
+    "personalInfo": "Información Personal",
+    "vehicleInfo": "Información del Vehículo",
+    "documents": "Documentos",
+    "currentLocation": "Ubicación Actual",
+    "coordinates": "Coordenadas",
+    "openInGoogleMaps": "Click para abrir en Google Maps",
+    "brand": "Marca",
+    "model": "Modelo",
+    "plate": "Placa",
+    "year": "Año",
+    "phone": "Teléfono",
+    "loadError": "Error al cargar los datos del conductor. Por favor, intente nuevamente.",
+    "backToDrivers": "Volver a conductores"
+  },
+  "driverEdit": {
+    "title": "Editar Conductor",
+    "saving": "Guardando...",
+    "saveChanges": "Guardar Cambios",
+    "cancel": "Cancelar",
+    "driverData": "Datos del Conductor",
+    "vehicleInformation": "Información del Vehículo",
+    "driverPhotos": "Fotos del Conductor",
+    "verificationStatus": "Estado de Verificación",
+    "verified": "Verificado",
+    "notVerified": "No Verificado",
+    "firstName": "Nombre",
+    "lastName": "Apellido",
+    "email": "Email",
+    "driverLicense": "Licencia de Conducir",
+    "idDocument": "Documento de Identidad",
+    "brand": "Marca",
+    "model": "Modelo",
+    "color": "Color",
+    "year": "Año",
+    "plate": "Placa",
+    "status": "Estado",
+    "available": "Disponible",
+    "busy": "Ocupado",
+    "pending": "Pendiente",
+    "offline": "Offline",
+    "updatedSuccessfully": "Conductor actualizado correctamente",
+    "updateError": "Error al actualizar el conductor",
+    "loadError": "Error al cargar los datos del conductor",
+    "backToList": "Volver a la lista"
+  },
+  "requests": {
+    "title": "Solicitudes",
+    "client": "Pasajero",
+    "requestDate": "Fecha de solicitud",
+    "origin": "Origen",
+    "destination": "Destino",
+    "status": "Estado",
+    "assignedDriver": "Conductor asignado",
+    "tabs": {
+      "all": "Todas",
+      "pending": "Pendientes",
+      "inProgress": "En proceso",
+      "onTheWay": "En camino",
+      "completed": "Completadas",
+      "cancelled": "Canceladas"
+    },
+    "search": {
+      "placeholder": "Buscar",
+      "button": "Actualizar"
+    },
+    "price": "Precio",
+    "commission": "% Comisión",
+    "route": "Ruta",
+    "conductor": "Conductor",
+    "noDriver": "-",
+    "clientNotAvailable": "Pasajero no disponible",
+    "statuses": {
+      "assignCost": "Asignar costo",
+      "pending": "Ir al cliente",
+      "approved": "Completado",
+      "unassigned": "Sin asignar",
+      "onWay": "En camino",
+      "assigned": "Asignada",
+      "inProgress": "En progreso",
+      "completed": "Completada",
+      "cancelled": "Cancelada"
+    },
+    "noRequests": {
+      "title": "No hay solicitudes disponibles",
+      "all": "No se encontraron solicitudes con los filtros aplicados",
+      "pending": "No hay solicitudes pendientes",
+      "inProgress": "No hay solicitudes en proceso",
+      "completed": "No hay solicitudes completadas",
+      "cancelled": "No hay solicitudes canceladas"
+    },
+    "alerts": {
+      "mockData": "📡 Mostrando datos de ejemplo - No se pudo conectar con el servidor",
+      "loadError": "Error al cargar las solicitudes",
+      "assignError": "Error al asignar conductor"
+    },
+    "modal": {
+      "assignDriver": "Asignar conductor",
+      "searchDrivers": "Buscar conductores",
+      "assign": "Asignar",
+      "noDrivers": "No se encontraron conductores",
+      "loadingDrivers": "Cargando conductores...",
+      "errorLoadingDrivers": "Error al cargar conductores"
+    },
+    "timeline": {
+      "created": "Solicitud creada",
+      "assigned": "Conductor asignado",
+      "started": "Viaje iniciado",
+      "completed": "Viaje completado",
+      "cancelled": "Solicitud cancelada"
+    },
+    "filters": {
+      "all": "Todas",
+      "pending": "Pendientes",
+      "inProgress": "En progreso",
+      "onTheWay": "En camino",
+      "completed": "Completadas",
+      "cancelled": "Canceladas"
+    },
+    "details": {
+      "title": "Detalles de solicitud",
+      "client": "Pasajero",
+      "driver": "Conductor",
+      "cost": "Costo",
+      "commission": "Comisión",
+      "created": "Creada",
+      "updated": "Actualizada"
+    },
+    "reassign": {
+      "disabledCompleted": "No se puede reasignar conductor: solicitud completada",
+      "disabledCancelled": "No se puede reasignar conductor: solicitud cancelada"
+    }
+  },
+  "drivers": {
+    "title": "Conductores",
+    "name": "Nombre",
+    "vehicle": "Vehículo",
+    "status": "Estado",
+    "lastLocation": "Última ubicación",
+    "phone": "Teléfono",
+    "licensePlate": "Placa",
+    "addDriver": "Agregar",
+    "searchPlaceholder": "Buscar",
+    "columns": {
+      "name": "Nombre",
+      "phone": "Teléfono",
+      "location": "Ubicación actual",
+      "status": "Estado",
+      "lastActivity": "Última actividad",
+      "actions": "Acciones"
+    },
+    "modal": {
+      "title": "Registrar",
+      "personalInfo": "Información personal",
+      "vehicleInfo": "Información del vehículo",
+      "documents": "Documentos",
+      "insuranceInfo": "Información del seguro",
+      "register": "Registrar",
+      "registering": "Registrando...",
+      "avatar": {
+        "upload": "Subir foto",
+        "delete": "Eliminar",
+        "restrictions": "Tamaño máximo: 2MB. Formatos: JPG, JPEG, PNG"
+      },
+      "insurance": {
+        "scanCard": "Escanear carnet",
+        "takePhoto": "Tomar foto",
+        "uploadImage": "Subir imagen",
+        "scanning": "Escaneando...",
+        "scanSuccess": "Información extraída exitosamente",
+        "scanError": "Error al extraer información",
+        "noTextFound": "No se pudo extraer texto de la imagen",
+        "retryOcr": "Reintentar escaneo",
+        "manualEntry": "Entrada manual",
+        "autoDetected": "Detectado automáticamente",
+        "verifyInfo": "Verificar información extraída"
+      }
+    },
+    "fields": {
+      "firstName": "Nombre",
+      "lastName": "Apellido",
+      "phone": "Teléfono",
+      "email": "Email",
+      "brand": "Marca",
+      "model": "Modelo",
+      "color": "Color",
+      "year": "Año",
+      "licensePlate": "Placa",
+      "driverLicense": "Licencia de conducir",
+      "idDocument": "Documento de identidad",
+      "insuranceCompany": "Compañía de seguro",
+      "insurancePolicy": "Número de póliza",
+      "insuranceExpiry": "Fecha de vencimiento",
+      "insuranceType": "Tipo de cobertura"
+    },
+    "statuses": {
+      "active": "Activo",
+      "inactive": "Inactivo",
+      "busy": "Ocupado",
+      "online": "Online",
+      "offline": "Offline",
+      "available": "Disponible",
+      "pending": "Pendiente",
+      "onTheWay": "En camino"
+    },
+    "lastActivity": {
+      "minutesAgo": "Hace {{minutes}} min",
+      "hoursAgo": "Hace {{hours}} horas",
+      "daysAgo": "Hace {{days}} días"
+    },
+    "errors": {
+      "loadError": "Error al cargar conductores. Por favor, intente nuevamente."
+    },
+    "filters": {
+      "allStatuses": "Todos los estados",
+      "all": "Todos",
+      "active": "Activos",
+      "inactive": "Inactivos"
+    },
+    "viewLocation": "Ver ubicación",
+    "viewOnMap": "Ver en mapa",
+    "notAvailable": "No disponible",
+    "viewDetails": "Ver detalles",
+    "statusChangedTo": "Estado cambiado a {{status}}",
+    "statusChangeError": "Error al cambiar estado del conductor"
+  },
+  "conductors": {
+    "title": "Conductores",
+    "list": {
+      "name": "Nombre",
+      "phone": "Teléfono",
+      "status": "Estado",
+      "location": "Ubicación",
+      "actions": "Acciones"
+    },
+    "create": {
+      "title": "Crear conductor",
+      "button": "Crear conductor"
+    },
+    "edit": {
+      "title": "Editar conductor",
+      "button": "Guardar cambios"
+    },
+    "searchPlaceholder": "Buscar conductores...",
+    "assignDriver": "Asignar conductor",
+    "noDrivers": "No se encontraron conductores",
+    "loadingDrivers": "Cargando conductores..."
+  },
+  "history": {
+    "title": "Historial",
+    "date": "Fecha",
+    "client": "Pasajero",
+    "driver": "Conductor",
+    "origin": "Origen",
+    "destination": "Destino",
+    "amount": "Monto"
+  },
+  "config": {
+    "title": "Configuración",
+    "general": "General",
+    "profile": "Perfil",
+    "notifications": "Notificaciones",
+    "security": "Seguridad",
+    "language": "Idioma",
+    "theme": "Tema",
+    "languages": {
+      "spanish": "Español",
+      "english": "Inglés"
+    }
+  },
+  "conductor": {
+    "title": "Panel del Conductor",
+    "status": "Estado actual",
+    "statuses": {
+      "active": "Activo",
+      "inactive": "Inactivo",
+      "busy": "En servicio"
+    },
+    "goActive": "Iniciar servicio",
+    "goInactive": "Finalizar servicio",
+    "currentRequest": "Solicitud actual",
+    "noCurrentRequest": "Sin solicitud asignada",
+    "acceptRequest": "Aceptar solicitud",
+    "rejectRequest": "Rechazar solicitud",
+    "completeRequest": "Completar viaje",
+    "locationTracking": "Seguimiento de ubicación"
+  },
+  "rides": {
+    "statuses": {
+      "pending": "Pendiente",
+      "assigned": "Asignado",
+      "onWay": "En camino",
+      "inProgress": "En progreso",
+      "completed": "Completado",
+      "cancelled": "Cancelado"
+    },
+    "actions": {
+      "start": "Pasajero recogido",
+      "complete": "Completar viaje",
+      "cancel": "Cancelar viaje"
+    },
+    "timeline": {
+      "created": "Viaje creado",
+      "assigned": "Conductor asignado",
+      "started": "Viaje iniciado",
+      "completed": "Viaje completado"
+    }
+  },
+  "comments": {
+    "title": "Comentarios",
+    "add": "Agregar comentario",
+    "addComment": "Agregar comentario",
+    "editComment": "Editar comentario",
+    "delete": "Eliminar comentario",
+    "history": "Historial",
+    "placeholder": "Escribe tu comentario aquí...",
+    "priority": "Prioridad",
+    "type": "Tipo",
+    "noComments": "No hay comentarios",
+    "addFirstComment": "Sé el primero en agregar un comentario",
+    "errorLoading": "Error al cargar comentarios",
+    "confirmDelete": "¿Estás seguro de que quieres eliminar este comentario?",
+    "edited": "editado",
+    "editingComment": "Editando comentario",
+    "roles": {
+      "admin": "Administrador",
+      "operator": "Operador",
+      "dispatcher": "Despachador"
+    },
+    "priorities": {
+      "low": "Baja",
+      "normal": "Normal",
+      "high": "Alta",
+      "urgent": "Urgente"
+    },
+    "types": {
+      "internal": "Interno",
+      "public": "Público"
+    }
+  },
+  "modals": {
+    "assignDriver": "Asignar conductor",
+    "confirmDelete": "Confirmar eliminación",
+    "confirmCancel": "Confirmar cancelación",
+    "titles": {
+      "assignDriver": "Asignar conductor",
+      "editComment": "Editar comentario",
+      "deleteComment": "Eliminar comentario",
+      "requestDetails": "Detalles de solicitud"
+    },
+    "confirmations": {
+      "deleteComment": "¿Estás seguro de que deseas eliminar este comentario?",
+      "cancelRequest": "¿Estás seguro de que deseas cancelar esta solicitud?",
+      "deleteDriver": "¿Estás seguro de que deseas eliminar este conductor?"
+    },
+    "actions": {
+      "confirm": "Confirmar",
+      "cancel": "Cancelar",
+      "delete": "Eliminar",
+      "save": "Guardar"
+    }
+  },
+  "forms": {
+    "labels": {
+      "name": "Nombre",
+      "email": "Email",
+      "phone": "Teléfono",
+      "password": "Contraseña",
+      "confirmPassword": "Confirmar contraseña",
+      "comment": "Comentario",
+      "priority": "Prioridad",
+      "type": "Tipo"
+    },
+    "placeholders": {
+      "searchDrivers": "Buscar conductores...",
+      "searchRequests": "Buscar solicitudes...",
+      "enterComment": "Ingresa tu comentario...",
+      "selectPriority": "Seleccionar prioridad",
+      "selectType": "Seleccionar tipo"
+    },
+    "validation": {
+      "required": "Este campo es requerido",
+      "email": "Por favor ingresa un email válido",
+      "phone": "Por favor ingresa un teléfono válido",
+      "minLength": "Mínimo {{count}} caracteres",
+      "maxLength": "Máximo {{count}} caracteres"
+    }
+  },
+  "errors": {
+    "network": "Error de conexión de red",
+    "loadingData": "Error al cargar datos",
+    "loadingConductors": "Error al cargar conductores",
+    "loadingRequests": "Error al cargar solicitudes",
+    "loadingComments": "Error al cargar comentarios",
+    "validation": "Error de validación",
+    "updateFailed": "Error al actualizar",
+    "createFailed": "Error al crear",
+    "deleteFailed": "Error al eliminar",
+    "loginFailed": "Error al iniciar sesión",
+    "tokenExpired": "Sesión expirada",
+    "unauthorized": "Acceso no autorizado",
+    "serverError": "Error del servidor",
+    "unknownError": "Ocurrió un error desconocido"
+  },
+  "success": {
+    "operations": {
+      "created": "Creado exitosamente",
+      "updated": "Actualizado exitosamente",
+      "deleted": "Eliminado exitosamente",
+      "assigned": "Asignado exitosamente"
+    },
+    "confirmations": {
+      "commentAdded": "Comentario agregado exitosamente",
+      "commentUpdated": "Comentario actualizado exitosamente",
+      "commentDeleted": "Comentario eliminado exitosamente",
+      "driverAssigned": "Conductor asignado exitosamente"
+    }
+  },
+  "users": {
+    "unknown": "Usuario Desconocido",
+    "current": "Usuario Actual",
+    "admin": "Administrador",
+    "operator": "Operador",
+    "driver": "Conductor",
+    "client": "Pasajero"
+  },
+  "navigation": {
+    "openingMapsApp": "Abriendo aplicación de mapas..."
+  },
+  "operations": {
+    "create": "Crear",
+    "update": "Actualizar",
+    "delete": "Eliminar",
+    "assign": "Asignar",
+    "unassign": "Desasignar",
+    "activate": "Activar",
+    "deactivate": "Desactivar"
+  },
+  "header": {
+    "admin": "Administrador",
+    "conductor": "Conductor"
+  },
+  "menu": {
+    "dashboard": "Dashboard",
+    "requests": "Solicitudes",
+    "drivers": "Conductores",
+    "clients": "Pasajeros",
+    "scheduledRides": "Carreras Programadas",
+    "zones": "Zonas",
+    "commissions": "Comisiones"
+  },
+  "scheduledRides": {
+    "title": "Carreras Programadas",
+    "addRide": "Nueva Carrera",
+    "searchPlaceholder": "Buscar cliente, teléfono, origen o destino...",
+    "filters": {
+      "allStatuses": "Todos los estados",
+      "from": "Desde",
+      "to": "Hasta"
+    },
+    "statuses": {
+      "pending": "Pendiente",
+      "confirmed": "Confirmada",
+      "assigned": "Asignada",
+      "inProgress": "En Proceso",
+      "completed": "Completada",
+      "cancelled": "Cancelada"
+    },
+    "priorities": {
+      "low": "Baja",
+      "normal": "Normal",
+      "high": "Alta",
+      "urgent": "Urgente"
+    },
+    "columns": {
+      "client": "Cliente",
+      "phone": "Teléfono",
+      "pickup": "Recogida",
+      "destination": "Destino",
+      "status": "Estado",
+      "priority": "Prioridad",
+      "date": "Fecha",
+      "time": "Hora",
+      "actions": "Acciones"
+    },
+    "actions": {
+      "viewDetails": "Ver detalles",
+      "edit": "Editar",
+      "delete": "Eliminar",
+      "changeStatus": "Cambiar estado"
+    },
+    "modal": {
+      "createTitle": "Nueva Carrera Programada",
+      "editTitle": "Editar Carrera Programada",
+      "fields": {
+        "client": "Cliente",
+        "clientPlaceholder": "Buscar cliente por nombre o teléfono",
+        "minChars": "Escribe al menos 3 letras...",
+        "noResults": "Sin resultados",
+        "origin": "Origen (recogida)",
+        "destination": "Destino",
+        "date": "Fecha",
+        "time": "Hora",
+        "priority": "Prioridad",
+        "notes": "Observaciones",
+        "driver": "Conductor (opcional)",
+        "driverPlaceholder": "Buscar conductor",
+        "noDrivers": "Sin conductores disponibles",
+        "recurring": "Carrera recurrente",
+        "recurringType": "Tipo de recurrencia",
+        "endDate": "Fecha de finalización",
+        "daysOfWeek": "Días de la semana"
+      },
+      "recurringTypes": {
+        "daily": "Diario",
+        "weekly": "Semanal",
+        "monthly": "Mensual"
+      },
+      "validation": {
+        "clientRequired": "Selecciona un cliente",
+        "locationsRequired": "Origen y destino son obligatorios",
+        "coordinatesRequired": "Debes seleccionar origen y destino del autocompletado para obtener coordenadas.",
+        "futureDateRequired": "La fecha/hora debe ser futura"
+      },
+      "actions": {
+        "save": "Guardar",
+        "update": "Actualizar",
+        "cancel": "Cancelar",
+        "saving": "Guardando...",
+        "updating": "Actualizando..."
+      }
+    },
+    "deleteConfirm": {
+      "title": "Confirmar Eliminación",
+      "message": "¿Estás seguro de que deseas eliminar la carrera programada para {{clientName}}?",
+      "warning": "Esta acción no se puede deshacer",
+      "confirm": "Eliminar",
+      "cancel": "Cancelar"
+    },
+    "notifications": {
+      "created": "Carrera creada exitosamente",
+      "updated": "Carrera actualizada exitosamente",
+      "deleted": "Carrera eliminada exitosamente",
+      "statusChanged": "Estado actualizado exitosamente",
+      "createError": "Error al crear la carrera",
+      "updateError": "Error al actualizar la carrera",
+      "deleteError": "Error al eliminar la carrera",
+      "loadError": "Error al cargar las carreras programadas. Por favor, intenta nuevamente."
+    },
+    "empty": {
+      "noRides": "No hay carreras programadas",
+      "noResults": "No se encontraron resultados",
+      "tryDifferentFilters": "Intenta con diferentes filtros"
+    },
+    "loading": {
+      "rides": "Cargando carreras...",
+      "clients": "Cargando clientes...",
+      "drivers": "Cargando conductores...",
+      "saving": "Guardando...",
+      "deleting": "Eliminando..."
+    },
+    "card": {
+      "estimatedCost": "Costo estimado",
+      "assignedDriver": "Conductor asignado",
+      "noDriver": "Sin conductor asignado",
+      "scheduled": "Programada para"
+    },
+    "statusMenu": {
+      "title": "Cambiar Estado",
+      "current": "(Actual)"
+    }
+  },
+  "app": {
+    "loadingTitle": "Cargando Taxi Rosa...",
+    "loadingSubtitle": "Preparando la mejor experiencia para ti"
+  },
+  "components": {
+    "locationInput": {
+      "placeholder": "Buscar dirección o lugar...",
+      "helperText": "Escribe para ver sugerencias",
+      "selectOnMap": "Seleccionar en mapa",
+      "searching": "Buscando...",
+      "noResults": "No se encontraron resultados",
+      "mapDialog": {
+        "title": "Selecciona la ubicación en el mapa",
+        "searchLabel": "Buscar ubicación",
+        "searchPlaceholder": "Buscar dirección en el mapa...",
+        "select": "Seleccionar"
+      }
+    }
+  }
+} 
