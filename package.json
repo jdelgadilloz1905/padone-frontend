@@ -9,7 +9,7 @@
     "dev:debug": "NODE_OPTIONS='--max-old-space-size=4096 --inspect' vite --host",
     "build": "tsc -b && vite build",
     "build:analyze": "npm run build && npx vite-bundle-analyzer dist",
-    "start": "tsc -b && vite build && serve -s dist",
+    "start": "vite build && serve -s dist",
     "lint": "eslint .",
     "preview": "vite preview --host"
   },
